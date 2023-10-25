@@ -32,12 +32,14 @@ void segrgate0_1and2(int a[],int n){
         if(a[mid]==0){
         swap(a[s],a[mid]);
         s++;
+        mid++;
         }
         else if(a[mid]==1){
             mid++;
         }
         else{
         swap(a[mid],a[e]);
+        e--;
         }
     }
 }
@@ -205,18 +207,18 @@ int duplicate(int a[],int n){
 
 
 int main(){
-    /*int n;
-    cin>>n;*/
+    int n;
+    cin>>n;
     
-    //int a[]={0,1,0,1,0,2,0,1,2,2};
-   /*int a[]={0,1,0,1,0,1,1};
-    printArray(a,n);
-    cout<<endl;
-    segrgate0_1and2(a,n);
+    int a[]={0,1,0,1,0,2,0,1,2,2};
+    //int a[]={0,1,0,1,0,1,1};
+    // printArray(a,n);
+    // cout<<endl;
+    segrgate0_1and2(a,10);
     //segregate0nd1(a,n);
     for(int i=0;i<n;i++){
         cout<<a[i]<<" ";
-    }*/
+    }
     
     /*vector<int>a={2,4,6,11,8,5};
     int target=10;
@@ -258,8 +260,8 @@ int main(){
     /*vector<int>a={1,2,3};
     vector<int>b={6,8,10,12};
     mergeSortedArray(a,b);*/
-    int a[]={1,5,5,6,7,8};
-    cout<<duplicate(a,6);
+    /*int a[]={1,5,5,6,7,8};
+    cout<<duplicate(a,6);*/
     
 
     return 0;

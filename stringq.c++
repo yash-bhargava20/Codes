@@ -171,8 +171,8 @@ int main(){
 
    
 
-    string s="sky is blue";
-    reverseWords(s);
+    /*string s="sky is blue";
+    reverseWords(s);*/
 
     /*string s1="a";
     string s2="b";
@@ -208,9 +208,9 @@ int main(){
 
     /*string s="aabcsdsee";
     cout<<removeDuplicate(s);*/
-    /*string a="aba";
+    string a="aba";
     string b="edf";
-    cout<<ismorphicString(a,b);*/
+    cout<<ismorphicString(a,b);
 
     return 0;
 }
