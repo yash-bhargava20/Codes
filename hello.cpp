@@ -33,5 +33,8 @@ int main(){
     m=2*n;
     cout<<m<<endl;
 
+   
+
+
 
 }

@@ -156,6 +156,30 @@ bool ismorphicString(string a,string b){
     }
     return true;
 }
+string firstNonRepeating(string S){
+    unordered_map<char,int>m;
+
+
+    for(int i=0;i<S.length();i++){
+        m[S[i]]++;
+    }
+    for(auto it:m){
+        if(it.second==1)
+        cout<<it.first<<endl;
+    }
+
+    return "$";
+
+}
+void removeSpaces(string s){
+    for(int i=0;i<s.size();i++){
+        s.erase(remove(s.begin(),s.end(),' '),s.end());
+    }
+    for(int i=0;i<s.size();i++){
+        cout<<s[i];
+    }
+    
+}
 int main(){
    /*char s[]="hello";
    cout<<s<<endl;;
@@ -208,9 +232,16 @@ int main(){
 
     /*string s="aabcsdsee";
     cout<<removeDuplicate(s);*/
-    string a="aba";
-    string b="edf";
-    cout<<ismorphicString(a,b);
+
+    // string a="aba";
+    // string b="edf";
+    // cout<<ismorphicString(a,b);
+
+    // string S ="aabcdd";
+    // firstNonRepeating(S);
+
+    string S=" hel l o";
+    removeSpaces(S);
 
     return 0;
 }

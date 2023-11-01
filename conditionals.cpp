@@ -173,5 +173,7 @@ int main(){
         n=n>>1;
     }
     cout<<count<<endl;*/
+ 
+
 
 }
