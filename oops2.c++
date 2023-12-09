@@ -7,6 +7,7 @@ using namespace std;
 //Data abstraction refers to providing only essential information about the data to the outside world, hiding the background details or implementation. 
 //Types Abstraction:Data Abstraction, Control Abstraction
 
+
 class promotion{
 
 };
